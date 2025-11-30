@@ -1,0 +1,195 @@
+body {
+    background: #222;
+    color: white;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#menu {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: #000000;
+    background-image: url(assets/pictures/title.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    z-index: 100;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+#menubox{
+ background-color: white;
+}
+#acc{
+    color: white;
+}
+#Tip{
+    color: rgb(180, 180, 180);
+}
+
+#ending1 {
+    background-image: url(assets/pictures/ending1.png);
+}
+#ending2 {
+    background-image: url(assets/pictures/title.png);
+}
+#ending3 {
+    background-image: url(assets/pictures/ending3.png);
+}
+#ending1, #ending2, #ending3{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 100;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+#ending1box, #ending2box, #ending3box{
+    background-color: black;
+}
+#instructionOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+#instructionBox {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+#stage2Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+#stage2Box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+#startGameBtn {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+}
+
+#menu h1 {
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 20px;
+}
+
+#menu button {
+    font-size: 1.5em;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 2px solid yellow;
+    background-color: black;
+    color: yellow;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#menu button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+canvas {
+    border: 2px solid #fff;
+}
+
+#Warning{
+    color: red;
+    font-weight: bold;
+}
+#score1 {
+    text-align: left;
+    color: rgba(255, 255, 0, 0.6);
+    font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 5.5em;
+    height: 1.6em;
+    font-size: 1.4em;
+    display: block;
+    margin: 0.5%;
+    padding: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#score2{
+    text-align: left;
+    color: rgba(255, 255, 0, 0.6);
+    font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 7.5em;
+    height: 1.6em;
+    font-size: 1.4em;
+    display: block;
+    margin: 0.5%;
+    padding: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#canvas-wrapper {
+    width: 100%;
+    max-width: 1176px;
+    aspect-ratio: 980 / 480;
+    position: relative;
+    margin: 0 auto;
+}
+
+#gameCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+ol{
+    text-align: left;
+}

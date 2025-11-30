@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gra</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body id="body">
+    <a id="acc"></a>
+    <div id="menu">
+    <div id="menubox">
+    <h1>Santa's bizzare adventure</h1>
+    <button id="startBtn">Start</button>
+    </div>
+    </div>
+    <div id="ending1">
+    <div id="ending1box">
+    <h1>Ojoj...</h1>
+    <p>Niestety lecz dzieci już nigdy nie doświadczą świąt takich jak my je pamiętamy...</p>
+    <p id="wynik1"></p>
+    </div>
+    </div>
+    <div id="ending2">
+    <div id="ending2box">
+    <h1>Niezła próba</h1>
+    <p>całkiem niezła robota!</p>
+    <p>Dzieci zapamiętają te święta dobrze.</p>
+    <p>Następnym razem spróbuj przebić ten wynik!</p>
+    <p id="wynik2"></p>
+    </div>
+    </div>
+    <div id="ending3">
+    <div id="ending3box">
+    <h1>Gratulacje</h1>
+    <p>Perfekcyjne wykonanie!</p>
+    <p>Dzieci będą wspominały te święta do końca swych żyć.</p>
+    <p>A to wszystko dzięki tobie!</p>
+    <p id="wynik3"></p>
+    </div>
+    </div>
+
+    <div id="instructionOverlay">
+    <div id="instructionBox">
+        <h2>Instrukcja</h2>
+        <p>Zostało mało czasu do mikołajek, dlatego elfy dla oszczędności czasu</p>
+        <p>rzucają do Mikołaja prezenty</p>
+        <p>poruszaj Mikołajem w lewo i prawo, aby łapać prezenty.</p>
+        <p>Szybko złap jak najwięcej prezentów!</p>
+        <p><a id="Warning">Uwaga: </a><a>Mikołaj potrafi łapać prezenty tylko rękoma</a></p>
+        <p><a id="Tip">w lewo: a/<- | w prawo: d/-></a></p>
+        <button id="startGameBtn">Zaczynam!</button>
+    </div>
+    </div>
+
+    <div id="stage2Overlay">
+    <div id="stage2Box">
+        <p>Po złapaniu tych wszystkich prezentów, pora rozwieść je dzieciom.</p>
+        <p>Niestety mikołaj dalej ma zbyt mało czasu by schodzić z swych sań</p>
+        <p>dlatego postanawia prezenty... wrzucać do kominków!</p>
+        <p>Staraj się trafić do kominków prezentami</p>
+        <p><a id="Tip">rzuć prezentem pod siebie: spacja</a></p>
+        <button id="startStage2Btn">Rozwozimy!</button>
+    </div>
+    </div>
+
+    <div id="canvas-wrapper">
+
+    <p id="score1"></p>
+    <p id="score2"></p>
+    <canvas id="gameCanvas" width="980" height="420">
+        <img src="assets/pictures/present.png" alt="present" id="present">
+        <img src="assets/pictures/plate.png" alt="plate" id="plate">
+        <img src="assets/pictures/kominspod.png" alt="kominspod" id="kominspod">
+        <img src="assets/pictures/santa.png" alt="santa" id="santa">
+        <img src="assets/pictures/santahat.png" alt="santahat" id="santahat">
+        <img src="assets/pictures/reindeer2.png" alt="reindeer" id="reindeer">
+        <img src="assets/pictures/KominGora.png" alt="KominGora" id="KominGora">
+        <img src="assets/pictures/sleight.png" alt="sleight" id="sleight">
+    </canvas>
+    </div>
+    <script src="game.js"></script>
+
+    
+</body>
+</html>
